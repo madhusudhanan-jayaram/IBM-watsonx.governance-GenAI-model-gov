@@ -29,9 +29,9 @@ IBM-watsonx.governance-GenAI-model-gov/
 │   │   └── insurance claim suggested next steps test data.csv
 │   │
 │   ├── wx_prompt/                      # Prompt templates
-│   │   ├── wx_prompt:Insuranceclaimsummarization...json
-│   │   ├── wx_prompt:Insuranceclaimkeyinformationextraction...json
-│   │   └── wx_prompt:Insuranceclaimsuggestednextsteps...json
+│   │   ├── Insuranceclaimsummarization.json
+│   │   ├── Insuranceclaimkeyinformationextraction.json
+│   │   └── Insuranceclaimsuggestednextsteps.json
 │   │
 │   └── .METADATA/                      # Asset metadata (auto-generated)
 │
@@ -40,13 +40,14 @@ IBM-watsonx.governance-GenAI-model-gov/
 │   ├── modelfacts_user.json
 │   └── wx_prompt.json
 │
-├── project.json                        # watsonx project configuration
-├── project:readme.json                 # Project documentation (IBM format)
-│
-├── claim_summarization_validation.csv  # Additional validation data
-│
-├── enterprise-genai-deployment-workflow.md   # Enterprise deployment guide
-└── enterprise-genai-management-guide.md      # Enterprise management guide
+└── documents/                          # Comprehensive guides
+    ├── watsonx-quickstart-guide.md
+    ├── IBM-watsonx-governance-teams-guide.md
+    ├── enterprise-genai-deployment-workflow.md
+    ├── enterprise-genai-management-guide.md
+    ├── genai-application-stack-governance.md
+    ├── governance-scope-guide.md
+    └── ai-factsheet-interpretation-guide.md
 ```
 
 ---
@@ -122,11 +123,58 @@ IBM-watsonx.governance-GenAI-model-gov/
 
 ## Documentation
 
+### Quick Start & Basics
+
 | Document | Description |
 |----------|-------------|
-| [Enterprise Deployment Workflow](enterprise-genai-deployment-workflow.md) | Detailed deployment process for enterprises |
-| [Enterprise Management Guide](enterprise-genai-management-guide.md) | GenAI management best practices |
-| [IBM Guide (PDF)](https://watsonx.governance-samples.s3.us.cloud-object-storage.appdomain.cloud/watsonx.governance%20first%20steps.pdf) | Official IBM step-by-step guide |
+| [Quick Start Guide](documents/watsonx-quickstart-guide.md) | Step-by-step setup and navigation guide |
+| [Teams Guide](documents/IBM-watsonx-governance-teams-guide.md) | Roles and collaboration in watsonx.governance |
+
+### Enterprise Guides
+
+| Document | Description |
+|----------|-------------|
+| [Enterprise Deployment Workflow](documents/enterprise-genai-deployment-workflow.md) | Detailed deployment process for enterprises |
+| [Enterprise Management Guide](documents/enterprise-genai-management-guide.md) | GenAI management best practices |
+
+### Governance Deep Dives
+
+| Document | Description |
+|----------|-------------|
+| [Governance Scope Guide](documents/governance-scope-guide.md) | What to govern and when |
+| [GenAI Application Stack Governance](documents/genai-application-stack-governance.md) | Governing the full AI stack |
+| [AI Factsheet Interpretation Guide](documents/ai-factsheet-interpretation-guide.md) | Understanding evaluation metrics and factsheets |
+
+### External Resources
+
+| Resource | Description |
+|----------|-------------|
+| [IBM Official Guide (PDF)](https://watsonx.governance-samples.s3.us.cloud-object-storage.appdomain.cloud/watsonx.governance%20first%20steps.pdf) | Official IBM step-by-step guide |
+
+---
+
+## Steps
+
+```
+  Setup          →        Build          →        Deploy         →        Monitor
+┌─────────┐         ┌─────────────┐         ┌─────────────┐         ┌─────────────┐
+│  1 - 3  │         │    4 - 7    │         │    8 - 9    │         │   10 - 11   │
+└─────────┘         └─────────────┘         └─────────────┘         └─────────────┘
+```
+
+| Step | Action | Phase |
+|:----:|--------|:-----:|
+| 1 | **Set up an AI Use Case** | Setup |
+| 2 | **Create a new Deployment Space** | Setup |
+| 3 | **Create a Project** | Setup |
+| 4 | **Understand the Dataset** | Build |
+| 5 | **Link Workspace** (Development Phase) | Build |
+| 6 | **Link Workspace** (Validation Phase) | Build |
+| 7 | **View all Assets in the Project** | Build |
+| 8 | **View AI Model Specifications** | Deploy |
+| 9 | **Promote the Model to the Next Space** | Deploy |
+| 10 | **Evaluate the AI Model** | Monitor |
+| 11 | **Evaluate Model Health** | Monitor |
 
 ---
 
