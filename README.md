@@ -178,6 +178,11 @@ IBM-watsonx.governance-GenAI-model-gov/
 
 ---
 
+Data set: https://github.com/madhusudhanan-jayaram/IBM-watsonx.governance-GenAI-model-gov/tree/main/assets/data_asset
+IBM Watsonx : https://dataplatform.cloud.ibm.com/registration/stepone?context=wx&apps=data_science_experience%2Cwatson_machine_learning%2Ccos%2Caiopenscale&uucid=0cf8ca3f38ace12f&utm_content=WXGWW&regions=us-south%2Ceu-de%2Cau-syd&preselect_region=true
+watson.governance Quality Evaluation Doc : https://dataplatform.cloud.ibm.com/docs/content/wsj/model/wos-monitor-gen-quality.html?context=cpdaas
+----
+
 ## License
 
 This project is part of IBM watsonx.governance samples.
